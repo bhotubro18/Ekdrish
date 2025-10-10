@@ -50,7 +50,7 @@ const Hero = () => {
       setGridImages(prev => {
         const newImages = [...prev];
         // Change 2-3 random cells
-        const cellsToChange = Math.floor(Math.random() * 3) + 2;
+        const cellsToChange = Math.floor(Math.random() * 2) + 2;
         for (let i = 0; i < cellsToChange; i++) {
           const randomCell = Math.floor(Math.random() * 12);
           if (Math.random() > 0.3) {
