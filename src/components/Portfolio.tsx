@@ -9,7 +9,7 @@ import theatreTrailer2Cover from "@/assets/theatre-trailer2-cover.avif";
 import twoMenCover from "@/assets/two-men-cover.avif";
 import addictionCover from "@/assets/addiction-cover.avif";
 import americanPsychoCover from "@/assets/american-psycho-cover.avif";
-import ingeniumCover from "@/assets/ingenium-cover.avif";
+import ingeniumCover from "@/assets/ingenium-cover.png";
 
 
 const Portfolio = () => {
