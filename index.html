@@ -37,53 +37,88 @@
 <!-- Floating Chatbot Form -->
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 <script>
-  window.formbutton = window.formbutton || function(){(formbutton.q = formbutton.q || []).push(arguments)};
+ 
 
-  formbutton("create", {
-    action: "https://formspree.io/f/xwprrqlq", // your endpoint
-    title: "Send a Message to EkDrish",
-    fields: [
-      { 
-        type: "email", 
-        label: "Your Email", 
-        name: "email",
-        required: true,
-        placeholder: "your@email.com"
-      },
-      {
-        type: "textarea",
-        label: "Message",
-        name: "message",
-        placeholder: "Write something...",
-        required: true
-      },
-      { type: "submit", label: "Send Message" }      
-    ],
-    styles: {
-      title: {
-        backgroundColor: "#3B82F6", // Tailwind blue-500
-        color: "white",
-        fontSize: "18px",
-        fontWeight: "600"
-      },
-      button: {
-        backgroundColor: "#FACC15", // yellow
-        color: "#1E3A8A", // deep blue text if any
-        borderRadius: "50%",
-        width: "60px",
-        height: "60px",
-        bottom: "24px",
-        right: "24px",
-        boxShadow: "0 5px 15px rgba(0,0,0,0.3)",
-      },
-      form: {
-        borderRadius: "20px",
-        boxShadow: "0 8px 30px rgba(0,0,0,0.15)"
-      }
+ 
+
+window.formbutton = window.formbutton || function(){(formbutton.q = formbutton.q || []).push(arguments)};
+formbutton("create", {
+  action: "https://formspree.io/f/xwprrqlq",
+  title: "Chat with EkDrish",
+  fields: [
+    { 
+      type: "email", 
+      label: "Email:", 
+      name: "email",
+      required: true,
+      placeholder: "your@email.com"
     },
-    initiallyVisible: false,
-  });
+    {
+      type: "textarea",
+      label: "Message:",
+      name: "message",
+      placeholder: "What's on your mind?",
+    },
+    { type: "submit", value: "Send Message" }      
+  ],
+  styles: {
+    title: {
+      background: "linear-gradient(135deg, #ff00cc, #3333ff)",
+      color: "white",
+      fontFamily: "Poppins, sans-serif",
+      fontWeight: "600",
+      borderTopLeftRadius: "12px",
+      borderTopRightRadius: "12px"
+    
+    },
+    button: {
+      background: "linear-gradient(135deg, rgba(255,0,204,0.8), rgba(51,51,255,0.8))",
+      border: "none",
+      boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
+      backdropFilter: "blur(12px)",
+      borderRadius: "50px",
+      width: "60px",
+      height: "60px",
+      right: "25px",
+      bottom: "25px",
+      fontSize: "22px"
+    },
+    modal: {
+      background: "rgba(255,255,255,0.15)",
+      backdropFilter: "blur(20px)",
+      borderRadius: "16px",
+      boxShadow: "0 8px 40px rgba(0,0,0,0.3)",
+      border: "1px solid rgba(255,255,255,0.2)",
+      color: "white",
+      fontFamily: "Poppins, sans-serif"
+    },
+    input: {
+      background: "rgba(255,255,255,0.1)",
+      border: "1px solid rgba(255,255,255,0.3)",
+      color: "#fff",
+      borderRadius: "8px",
+      padding: "10px",
+    },
+    submit: {
+      background: "linear-gradient(135deg, #ff00cc, #3333ff)",
+      color: "white",
+      border: "none",
+      borderRadius: "10px",
+      fontWeight: "600",
+      padding: "10px 15px",
+      cursor: "pointer",
+      transition: "all 0.3s ease",
+    },
+    close: {
+      color: "white",
+    }
+  },
+});
+
+
+
 </script>
+
 
   </body>
 </html>
