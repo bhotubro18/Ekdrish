@@ -10,6 +10,7 @@ import twoMenCover from "@/assets/two-men-cover.avif";
 import vajoodCover from "@/assets/vajood-cover.avif";
 import architectureShot from "@/assets/architecture-shot.jpg";
 import vintageLamp from "@/assets/vintage-lamp.jpg";
+
 const Hero = () => {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({
@@ -28,6 +29,7 @@ const Hero = () => {
     vajoodCover,
     architectureShot,
     vintageLamp,
+
   ];
 
   // State for grid images - 12 cells with random images
