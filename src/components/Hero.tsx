@@ -10,9 +10,6 @@ import twoMenCover from "@/assets/two-men-cover.avif";
 import vajoodCover from "@/assets/vajood-cover.avif";
 import architectureShot from "@/assets/architecture-shot.jpg";
 import vintageLamp from "@/assets/vintage-lamp.jpg";
-import pixel3Cover from "@/assets/IMG_9721.jpg";
-import pixel4Cover from "@/assets/IMG_9764.jpg";
-import pixel5Cover from "@/assets/IMG_9789.jpg";
 const Hero = () => {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({
@@ -31,9 +28,6 @@ const Hero = () => {
     vajoodCover,
     architectureShot,
     vintageLamp,
-    pixel3Cover,
-    pixel4Cover,
-    pixel5Cover,
   ];
 
   // State for grid images - 12 cells with random images
