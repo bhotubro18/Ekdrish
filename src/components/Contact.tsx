@@ -7,7 +7,7 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       primary: "ekdrish@gmail.com",
-      //secondary: "ubhadiyaparth6@gmail.com",
+      secondary: "ubhadiyaparth6@gmail.com",
       href: "mailto:ekdrish@gmail.com",
     },
     {
@@ -19,8 +19,8 @@ const Contact = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      //primary: "@bhotu.patell",
-      primary: "@ekdrish",
+      primary: "@bhotu.patell",
+      secondary: "@ekdrish",
       href: "https://instagram.com/bhotu.patell",
     },
   ];
