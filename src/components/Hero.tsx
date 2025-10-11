@@ -10,7 +10,9 @@ import twoMenCover from "@/assets/two-men-cover.avif";
 import vajoodCover from "@/assets/vajood-cover.avif";
 import architectureShot from "@/assets/architecture-shot.jpg";
 import vintageLamp from "@/assets/vintage-lamp.jpg";
-
+import pixel3Cover from "@/assets/IMG_9721.jpg";
+import pixel4Cover from "@/assets/IMG_9764.jpg";
+import pixel5Cover from "@/assets/IMG_9789.jpg";
 const Hero = () => {
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({
@@ -29,6 +31,9 @@ const Hero = () => {
     vajoodCover,
     architectureShot,
     vintageLamp,
+    pixel3Cover,
+    pixel4Cover,
+    pixel5Cover,
   ];
 
   // State for grid images - 12 cells with random images
@@ -61,7 +66,7 @@ const Hero = () => {
         }
         return newImages;
       });
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -259,17 +264,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-400">
-          <button 
-            onClick={scrollToAbout} 
-            className="flex flex-col items-center gap-2 text-white/60 hover:text-accent transition-smooth group" 
-            aria-label="Scroll to explore"
-          >
-            <span className="uppercase tracking-widest text-sm">Scroll to explore</span>
-            <ArrowDown className="w-5 h-5 animate-bounce" />
-          </button>
-        </div>
+        
       </div>
     </section>
   );
