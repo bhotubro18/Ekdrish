@@ -212,7 +212,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="text-center animate-fade-in">
           {/* Main headline */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-none mb-6">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-inter leading-none mb-6">
             <span className="block text-white">EVERY</span>
             <span className="block text-accent">PIXEL</span>
             <span className="block text-white">TELLS A</span>
