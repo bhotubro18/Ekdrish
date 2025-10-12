@@ -213,9 +213,9 @@ const Hero = () => {
         <div className="text-center animate-fade-in">
           {/* Main headline */}
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-inter leading-none mb-6">
-            <span className="block text-white">EVERY</span>
-            <span className="block text-accent">PIXEL</span>
-            <span className="block text-white">TELLS A</span>
+            <span className="block text-white font-bold">EVERY</span>
+            <span className="block text-accent font-bold">PIXEL</span>
+            <span className="block text-white font-bold">TELLS A</span>
             <span className="block text-accent italic">STORY.</span>
           </h1>
 
