@@ -9,6 +9,7 @@ import theatreTrailer2Cover from "@/assets/theatre-trailer2-cover.avif";
 import twoMenCover from "@/assets/two-men-cover.avif";
 import addictionCover from "@/assets/addiction-cover.avif";
 import americanPsychoCover from "@/assets/american-psycho-cover.avif";
+import ingeniumfest from "@/assets/ingenium-cover.png";
 
 const Portfolio = () => {
   const [selectedVideos, setSelectedVideos] = useState<Record<number, number>>({});
@@ -65,6 +66,7 @@ const Portfolio = () => {
       role: "Director, Editor",
       duration: "Short Film",
       featured: true,
+      coverImage: ingeniumfest,
       videos: [
         { url: "https://www.instagram.com/reel/DJ4a7GEySMB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", label: "Watch Film", coverImage: undefined }
       ],
