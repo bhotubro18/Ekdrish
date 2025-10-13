@@ -149,7 +149,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white/20 text-white hover:bg-white/10 hover:text-accent transition-all duration-300" 
+              className="border-white/20 text-black hover:bg-white/10 hover:text-accent transition-all duration-300" 
               asChild
             >
               <a href="https://instagram.com/bhotu.patell" target="_blank" rel="noopener noreferrer">
@@ -161,7 +161,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white/20 text-white hover:bg-white/10 hover:text-accent transition-all duration-300" 
+              className="border-white/20 text-black hover:bg-white/10 hover:text-accent transition-all duration-300" 
               asChild
             >
               <a href="https://instagram.com/ekdrish" target="_blank" rel="noopener noreferrer">
