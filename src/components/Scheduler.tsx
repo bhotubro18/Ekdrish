@@ -17,7 +17,7 @@ const Scheduler = () => {
           </div>
           
           <div className="cinematic-border rounded-xl overflow-hidden shadow-soft">
-            <InlineWidget url="https://calendly.com/ekdrish/30min" />
+            <InlineWidget url="https://calendly.com/your-username/30min" />
           </div>
         </div>
       </div>
