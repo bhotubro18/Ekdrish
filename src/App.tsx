@@ -8,18 +8,16 @@ import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
+import SchedulePage from "./pages/SchedulePage";
 import NotFound from "./pages/NotFound";
-import CursorTrail from "./components/CursorTrail";
-import Schedule from "@/pages/Schedule";
-
 
 const queryClient = new QueryClient();
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <CursorTrail />   {/* 👈 Add this line here */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
@@ -27,11 +25,13 @@ const App = () => (
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/schedule" element={<Schedule />} /> 
+          <Route path="/schedule" element={<SchedulePage />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
+
 export default App;
