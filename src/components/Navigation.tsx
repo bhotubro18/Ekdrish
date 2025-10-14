@@ -15,6 +15,8 @@ const Navigation = () => {
     { name: "Portfolio", href: "/portfolio" },
     { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
+    { name: "Schedule a Meeting", href: "/schedule" },
+    
   ];
 
   useEffect(() => {
