@@ -78,10 +78,10 @@ const Hero = () => {
       setGridImages(prevImages => {
         const newImages = [...prevImages];
         // Determine how many cells to change for a dynamic effect (1 or 2)
-        const cellsToChange = Math.floor(Math.random() * 5) + 1; 
+        const cellsToChange = Math.floor(Math.random() * 3) + 1; 
 
         for (let i = 0; i < cellsToChange; i++) {
-          const randomCellIndex = Math.floor(Math.random() * 15);
+          const randomCellIndex = Math.floor(Math.random() * 12);
           const currentImage = newImages[randomCellIndex];
           let newImage;
 
